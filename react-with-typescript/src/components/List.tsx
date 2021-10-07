@@ -1,10 +1,12 @@
 import React from 'react'
-import {IState as IProps} from '../App'
+import { IState as IProps} from '../App'
 
 
 
 const List: React.FC<IProps>= ({people}) => {
-
+ 
+       
+        
     const renderList = () :JSX.Element[]  =>{
       
         return people.map(person=>{
@@ -22,6 +24,7 @@ const List: React.FC<IProps>= ({people}) => {
     return (
         <ul>
          {renderList()}
+         {/* {ime} */}
         </ul>
     )
 }
